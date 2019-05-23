@@ -1,0 +1,321 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #000
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html
+	font-size: 10px
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+section
+	padding: 60px 0
+
+.accent-txt
+	color: $accent
+
+b, strong
+	font-weight: bold
+
+.btn
+	padding: 20px 52px
+	color: #fff
+	font-family: 'Open Sans SemiBold', sans-serif
+	text-transform: uppercase
+	font-size: 1.6rem
+	background-color: $btn-color
+	border-radius: 32.5px
+	transition: 0.2s
+	&:hover
+		box-shadow: 0px 11px 18px 0px rgba(15, 152, 4, 0.32)
+		color: #fff
+		text-decoration: none
+
+.section_heading
+	font-size: 3rem
+	padding: 49px 0
+	font-weight: regular
+	h2
+		font-weight: normal
+
+.main_head
+	max-width: 100%
+	padding: 65px 0
+	height: 900px
+	// background: url(../img/air-conditioners.jpg) no-repeat bottom right / 50%
+	background: url(../img/top_bg.png) no-repeat center 120px / contain
+	.main_nav
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		font-size: 1.8rem
+		ul
+			display: flex
+			width: 100%
+			list-style-type: none
+			li a
+				color: #000
+				text-decoration: none
+				margin-left: 50px
+				transition: 0.2s
+				&:hover
+					color: $accent
+	&_contacts
+		line-height: 25px
+		p
+			font-size: 2.5rem
+		img
+			width: 25px
+	.top_content
+		width: 470px
+		padding: 100px 0
+		padding-bottom: 0
+		.the-best
+			font-size: 2.5rem
+			padding-bottom: 60px
+		h1
+			font-size: 6.5rem
+			font-weight: bold
+			line-height: 75px
+			margin-bottom: 45px
+		.top-text
+			font-family: 'Open Sans SemiBold', sans-serif
+			font-size: 1.6rem
+			padding-bottom: 60px
+
+.scroll-to
+	display: none
+
+.top-form
+	position: relative
+	max-width: 255px
+	height: 80px
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	padding-top: 0
+	margin-top: 0
+	transition: 0.3s
+	input
+		display: block
+		position: absolute
+	input[type="submit"]
+		position: relative
+		border: none
+		cursor: pointer
+	input[type="text"], input[type="tel"]
+		display: none
+		width: 255px
+		height: 45px
+		padding-left: 20px
+	input:not(:first-child)
+
+.advants
+	background-color: #f6f6f6
+	&_item_box
+		display: flex
+		flex-direction: column
+		align-items: center
+		background-color: #efefef
+		width: 320px
+		height: 448px
+		transition: 0.2s
+		&_icon
+			svg
+				width: 60px
+				height: 60px
+				margin-top: 110px
+				fill: $accent
+				transition: 0.2s
+		&_descr
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 100%
+			margin-top: 68px
+			background-color: #fff
+			transition: 0.2s
+			p
+				font-size: 2.5rem
+				line-height: 35px
+				padding: 20px 45px
+				text-align: center
+		&:hover
+			background-color: #323244
+		&:hover svg
+			fill: #fff
+		&:hover .advants_item_box_descr
+			background-color: #171720
+			color: #fff
+
+.how-work
+	background-color: #f6f6f6
+	.item1
+		background: url(../img/how_bg1.jpg) no-repeat center center / cover
+	.item2
+		background: url(../img/how_bg2.jpg) no-repeat center center / cover
+	.item3
+		background: url(../img/how_bg3.jpg) no-repeat center center / cover
+	&_items_box
+		width: 320px
+		height: 540px
+		background-color: #fff
+		&_img
+			width: 100%
+			height: 60%
+		&_descr
+			display: flex
+			align-items: center
+			padding-top: 60px
+			padding-left: 38px
+			transition: 0.2s
+			h3
+				font-size: 6.8rem
+				transition: 0.2s
+			p
+				font-size: 2.5rem
+				margin-left: 26px
+				line-height: 35px
+		&:hover
+			background-color: $accent
+			color: #fff
+		&:hover h3
+			color: #fff
+
+.form_wrap
+	background-color: #f6f6f6
+	padding-bottom: 40px
+	.section_heading
+		text-align: center
+	form
+		display: flex
+		align-items: center
+		justify-content: space-around
+		padding: 0 30px
+		input[type="submit"]
+			border: none
+			cursor: pointer
+		input[type="text"], input[type="tel"]
+			width: 255px
+			height: 45px
+			padding-left: 20px
+.offert
+	font-family: 'Open Sans SemiBold', sans-serif
+	font-size: 1.4rem
+	color: #525252
+	margin-left: 120px
+	a
+		color: #525252
+		text-decoration: underline
+	
+.slider-wrap
+	position: relative
+	width: 100%
+	padding: 0
+	.slider
+		position: relative
+		&-item
+			margin-top: -330px
+			&__descr
+				position: relative
+				top: 580px	
+				left: 500px
+				width: 500px
+				height: 330px
+				background-color: rgba(#fff, .8)
+				z-index: 100
+				h3
+					font-size: 65px
+					line-height: 75px
+					padding-top: 47px
+					padding-left: 60px
+				p	
+					position: absolute
+					width: 100%
+					bottom: 0
+					display: block
+					font-size: 40px
+					background-color: #fff
+					padding: 20px 60px
+					margin-top: 27px
+			img
+				width: 100%
+				z-index: -10
+	.arrow-prev, .arrow-next
+		position: absolute
+		top: 45%
+		width: 10px
+		height: 16px
+		background: url(../img/arrow.png) no-repeat center center
+		cursor: pointer
+	.arrow-prev
+		left: 20%
+	.arrow-next
+		right: 20%
+		transform: rotate(180deg)
+	
+
+.contacts
+	width: 100%
+	padding-top: 120px
+	color: #fff
+	background: url(../img/map.png) no-repeat center center / cover
+	&-item
+		font-size: 4rem
+		margin-top: 200px
+		margin-bottom: 60px
+		a
+			color: #ffffff
+			text-decoration: underline
+	&-form
+		form
+			display: flex
+			align-items: center
+			justify-content: space-around
+			padding: 0 30px
+			input[type="submit"]
+				border: none
+				cursor: pointer
+			input[type="text"], input[type="tel"]
+				width: 255px
+				height: 45px
+				padding-left: 20px
+		.offert
+			color: #fff
+			a
+				color: #fff
+
+.main_foot
+	height: 150px
+	width: 100%
+	background-color: #171720
+	color: #fff
+	text-align: center
+	display: flex
+	justify-content: center
+	flex-direction: column
+	font-size: 1.6rem
+
+
+
+@import "media" // Always at the end
